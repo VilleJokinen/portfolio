@@ -19,13 +19,13 @@ const Home = () => {
           />
           <Element projekti="Space invader" 
           image="https://cdn.discordapp.com/attachments/1063486083050000426/1143568175640875118/Screenshot_2023-08-22_183103.png"
-          text="Unity 2d peli, tehty TET-jaksolla"
+          text="Unity 2d peli, tehty TET-jaksoilla"
           link="https://github.com/VilleJokinen/space_invader"
           />
           <Element projekti="Villebot 2.0"
-            image="https://cdn.discordapp.com/attachments/1063486083050000426/1143568175640875118/Screenshot_2023-08-22_183103.png"
+            image="https://cdn.discordapp.com/attachments/1063486083050000426/1196881166242955405/image.png?ex=65b93d73&is=65a6c873&hm=02888f887d426f722c0b8c3390f38cd4aac9704d8dd42d33073a4a98a129f8fb&"
             text="Discord botti Pythonilla"
-            link="https://discord.gg/q7ykGQ2Kgj"
+            link="https://replit.com/@Villeboifirst/VilleBOT-20?v=1"
           />
           <Element projekti="Snake"
             image="https://cdn.discordapp.com/attachments/1063486083050000426/1154796555535134730/image.png"

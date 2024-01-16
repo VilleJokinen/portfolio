@@ -5,7 +5,7 @@ import Header from './header.js'
 import "./style.css"
 import Element from './pages/Element.js'
 import FluidGrid from 'react-fluid-grid'
-
+import CardGame from './pages/CardGame.jsx'
 
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Layout from "./pages/Layout";
@@ -22,7 +22,8 @@ const myPage = <div>
           <Route path ="/portfolio" element={<Home />} />
           <Route path="/portfolio/cv" element={<CV />} />
           <Route path="/portfolio/contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
+        <Route path="*" element={<NoPage />} />
+        <Route path="/portfolio/cardgame" element={<CardGame />} />
         </Route>
       </Routes>
     </BrowserRouter>
