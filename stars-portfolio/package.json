@@ -1,8 +1,8 @@
 {
   "name": "stars-portfolio",
-  "homepage": "http://villeJokinen.github.io/portfolio",
+  "homepage": "https://villejokinen.github.io/portfolio/",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@allpro/react-fluid-grid": "^0.5.8",
     "@testing-library/jest-dom": "^5.16.5",

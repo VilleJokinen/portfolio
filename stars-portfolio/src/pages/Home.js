@@ -18,7 +18,7 @@ const Home = () => {
           link="https://github.com/VilleJokinen/Infinite_runner"
           />
           <Element projekti="Space invader" 
-          image="https://cdn.discordapp.com/attachments/1063486083050000426/1143568175640875118/Screenshot_2023-08-22_183103.png"
+          image="https://cdn.discordapp.com/attachments/1063486083050000426/1196899136507740221/image.png?ex=65b94e2f&is=65a6d92f&hm=924f443fe9a4a5f4448a0cfefdd0d89bfce3e0d403b137801f79203ac37fcff3&"
           text="Unity 2d peli, tehty TET-jaksoilla"
           link="https://github.com/VilleJokinen/space_invader"
           />
