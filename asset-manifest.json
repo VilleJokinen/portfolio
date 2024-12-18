@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.151112e4.css",
-    "main.js": "/portfolio/static/js/main.73964dba.js",
+    "main.css": "/portfolio/static/css/main.457df63f.css",
+    "main.js": "/portfolio/static/js/main.18092ed0.js",
+    "static/media/space_invader.png": "/portfolio/static/media/space_invader.e9d0f7f012cddb7459df.png",
+    "static/media/antack_logo.png": "/portfolio/static/media/antack_logo.17dda47d61c2a1606ebf.png",
+    "static/media/matopeli.png": "/portfolio/static/media/matopeli.ddee744cf621c041bb4c.png",
+    "static/media/villebot2ss.png": "/portfolio/static/media/villebot2ss.a41c9ea0c9dafacc30fb.png",
     "index.html": "/portfolio/index.html",
-    "main.151112e4.css.map": "/portfolio/static/css/main.151112e4.css.map",
-    "main.73964dba.js.map": "/portfolio/static/js/main.73964dba.js.map"
+    "main.457df63f.css.map": "/portfolio/static/css/main.457df63f.css.map",
+    "main.18092ed0.js.map": "/portfolio/static/js/main.18092ed0.js.map"
   },
   "entrypoints": [
-    "static/css/main.151112e4.css",
-    "static/js/main.73964dba.js"
+    "static/css/main.457df63f.css",
+    "static/js/main.18092ed0.js"
   ]
 }
