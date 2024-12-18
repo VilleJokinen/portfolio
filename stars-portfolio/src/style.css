@@ -1,38 +1,45 @@
-body{
+body {
   background-color: rgb(178, 226, 202);
-
+  font-family: 'Ledger', serif;
+  margin: 0;
+  padding: 0;
 }
 
-.header_color{
+.header_color {
   background-color: rgb(0, 187, 255);
   color: rgb(234, 0, 255);
+  padding: 20px;
+  text-align: center;
 }
-.element{
-background-color: white;
-width: 100%;
-text-align: center;
-border: 1px solid #ddd;
-border-radius: 8px;
-padding: 5px;
+
+.element {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.element:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
 }
 
 .element img {
-border: 1px solid #ddd;
-border-radius: 8px;
-padding: 5px;
-width: 80%;
-height: auto;
-display: block;
-margin-left: auto;
-margin-right: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.fluid_container{
-margin: auto;
-padding: 30px;
-}
-
-.cvbutton {
+.element a {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -40,13 +47,32 @@ padding: 30px;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-.cvbutton:hover {
-  background-color: #d21717;
+.fluid_container {
+  margin: auto;
+  padding: 30px;
 }
 
-.mailbutton {
+.cv-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cv-container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.cv-container .cvbutton {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -54,22 +80,131 @@ padding: 30px;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.mailbutton:hover {
-  background-color: #d21717;
+.cv-container .cvbutton:hover {
+  background-color: #0056b3;
 }
 
-.mainsitebutton {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
+.contact-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Ledger', serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.contact-container p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contact-info {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-family: 'Ledger', serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: 'Ledger', serif;
+  margin-bottom: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.send-button {
+  background-color: #0077b5;
+  color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  padding: 10px 15px;
+  font-size: 1rem;
   cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
-.mainsitebutton:hover {
-  background-color: #d21717;
+.send-button:hover {
+  background-color: #005582;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0056b3;
 }

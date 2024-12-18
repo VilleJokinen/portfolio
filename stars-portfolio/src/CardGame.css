@@ -2,42 +2,61 @@
     -webkit-user-select: none;
     user-select: none;
     font-family: sans-serif;
-
 }
 
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
 
 ul {
     padding: 0;
     margin: 0;
-
 }
 
 li {
     list-style: none;
 }
 
-.card{
+.card {
     width: 120px;
     height: 200px;
-    background-color: rgb(131, 245, 1);
+    background-color: #83f501;
     border-radius: 8px;
     border: 2px solid red;
     box-shadow: 1px 1px 4px 1px gray;
     position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slideIn 0.5s ease-out;
 }
 
-.card.back{
+.card img {
+    border-radius: 8px;
+    width: 100px;
+    height: 80px;
+}
+
+.card.back {
     background-color: blanchedalmond;
 }
-.stat-list{
+
+.stat-list {
     margin: 0;
     padding: 0 8px;
+    width: 100%;
 }
 
-.stat-list-item{
+.stat-list-item {
     list-style: none;
-    display:flex;
+    display: flex;
     justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
 }
 
 .stat-list-item.selected {
@@ -49,10 +68,16 @@ li {
     outline: 1px dashed black;
     background-color: #fafafa;
 }
-.game{
+
+.game {
     display: flex;
     justify-content: center;
     gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
 
 .center-area {
@@ -61,35 +86,104 @@ li {
     min-width: 10vw;
 }
 
-.card-list{
-    display:flex;
-    flex-direction:row-reverse;
+.card-list {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.card-list-item.player{
+.card-list-item.player {
     margin-left: calc(6vw - 140px);
-    
 }
-.card-list-item.opponent{
+
+.card-list-item.opponent {
     margin-right: calc(6vw - 140px);
     direction: ltr;
 }
 
-.card-list.opponent{
+.card-list.opponent {
     direction: rtl;
-    
 }
 
-.play-button{
-    width: 80px;
+.play-button {
+    width: 100px;
     height: 40px;
     align-self: center;
     font-size: larger;
     font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.hand{
+.play-button:hover {
+    background-color: #0056b3;
+}
+
+.hand {
     display: flex;
     flex-direction: column;
     min-width: 40vw;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.card-exit-left {
+    animation: slideOutLeft 0.5s ease-in;
+}
+
+.card-exit-right {
+    animation: slideOutRight 0.5s ease-in;
+}
+
+.hidden {
+    visibility: hidden;
 }

@@ -1,9 +1,9 @@
 function Header() {
     return(
-        <div class="mt-4 p-5 text-white rounded header_color">
+        <header className="mt-4 p-5 text-white rounded header_color">
             <h1>Portfolio</h1>
-            <p>Ville Jokinen</p>
-        </div>
+            <h2>Ville Jokinen</h2>
+        </header>
     )
 }
-export default Header
+export default Header;
